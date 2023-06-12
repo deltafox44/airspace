@@ -1,4 +1,4 @@
-# Copy file to planeur.net FTP server
+# Valide et convertit en .cub
 
 name: 2 - (main) Validate, Convert, Push to FTP
 
@@ -64,35 +64,6 @@ jobs:
       with:
         script: |
           core.setFailed('Validation failed ! See Above step for details...')
-
-  web-deploy:
-    name: 🎉 Upload files to FTP
-    runs-on: ubuntu-latest
-    needs: [check-validation]
-    if: |
-      always() &&
-      contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed')
-
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v3
-
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: "./"
-        server-dir: "./"
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/bin/**
-          france.cub
-          france.geojson
-          README.md
-        dry-run: false
 
   convert-to-cub:
     name: Convert france.txt to .cub
