@@ -6,7 +6,7 @@ name: 2 - (main) Validate, Convert, Push to FTP
 on:
   # Triggers the workflow After the version has been added
   workflow_run:
-    workflows: ["1 - Add version to france.txt"]
+    workflows: ["Add version to france.txt"]
     types:
       - completed
 
