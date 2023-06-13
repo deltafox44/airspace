@@ -32,7 +32,7 @@ jobs:
           git log --pretty="%h %cI" -n1 -- france.txt
           versionInfo=$(git log --pretty="%h %cI" -n1 -- france.txt)
           # Remove first line if applicable
-          sed -i "$((grep -nm1 *version= ./france.txt || echo 1000000000:) | cut -f 1 -d:) d" ./france.txt
+          sed -i "$((grep -nm1 *version_deltafox= ./france.txt || echo 1000000000:) | cut -f 1 -d:) d" ./france.txt
           # Add version information
           sed -i "1i *version= $versionInfo" ./france.txt
           
