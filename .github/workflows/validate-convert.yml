@@ -1,6 +1,6 @@
 # Valide et convertit en .cub
 
-name: 2 - (main) Validate, Convert, Push to FTP
+name: Validate, Convert
 
 # Controls when the workflow will run
 on:
