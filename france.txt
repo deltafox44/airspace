@@ -27,7 +27,7 @@
 *                                                                              *
 ********************************************************************************
 
-** Version allégée de classes E etc. :
+** Version Deltafox allégée de classes E etc. :
 ** R7s
 ** R149
 ** R147
