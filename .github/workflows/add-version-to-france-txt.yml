@@ -41,5 +41,5 @@ jobs:
       - name: Push changes into repo
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automated Change
+          commit_message: Date de mise à jour modifiée
           file_pattern: 'france.txt'
