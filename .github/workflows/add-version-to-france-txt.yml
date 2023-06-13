@@ -1,4 +1,4 @@
-name: 1 - Add version to france.txt
+name: Add version to france.txt
 
 # Controls when the workflow will run
 on:
@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - main
+      - deltafox44-light
     paths:
       - 'france.txt'
 
