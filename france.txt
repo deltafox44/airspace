@@ -4,7 +4,7 @@
 *                               AIRSPACE OF FRANCE                             *
 *                         OPTIMIZED FOR GLIDER ACTIVITY                        *
 *                                                                              *
-*                        SOURCE: AIP FRANCE 2024/04/18                       *
+*                        SOURCE: AIP FRANCE 2024/04/18                         *
 *                     https://www.sia.aviation-civile.gouv.fr                  *
 *                                                                              *
 *                 >>>>> UNOFFICIAL, USE AT YOUR OWN RISK <<<<<                 *
@@ -25,6 +25,8 @@
 *                       contact : commission.espaceaerien@ffvp.fr              *
 *                                                                              *
 ********************************************************************************
+
+** TEST DF
 
 ** Version allégée de classes E etc. :
 ** R 7 A TOURS CINQ MARS LA PILE + B + C
